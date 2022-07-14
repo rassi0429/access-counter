@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  node:
+    build: .
+    init: true
+    restart: always
+    ports:
+      - "127.0.0.1:4001:4001"
+    volumes:
+      - ./data:/app/data
